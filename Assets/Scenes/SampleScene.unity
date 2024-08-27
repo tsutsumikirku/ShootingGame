@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -318,7 +319,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.027901383, g: 0.14126916, b: 0.31132078, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -374,6 +375,15 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!45 &963194229
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: efd1c33efd2d58340b88804268e6833f, type: 2}
 --- !u!1 &2125164093 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3802501479016955796, guid: 15cf0aa122e12e546b014a3902218477, type: 3}
@@ -391,9 +401,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3264deb983d16454d8a3ce1f118f9f16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: -5.81
-  _maxz: 16.7
-  _maxx: 5.42
+  _moveSpeed: -13
+  _maxz: 23
+  _maxx: 5
+  _rotationSpeed: 11
+  _highPosision: 16
+  _minPosision: 0
+  _leftPosision: -15
+  _rightPosision: 15
 --- !u!54 &2125164099
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -431,7 +446,7 @@ Animator:
   m_GameObject: {fileID: 2125164093}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ceac660938c025149b30d4a55d9232eb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
