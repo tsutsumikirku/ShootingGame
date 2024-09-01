@@ -179,9 +179,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3802501479016955796, guid: 15cf0aa122e12e546b014a3902218477, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 2125164104}
-    - targetCorrespondingSourceObject: {fileID: 3802501479016955796, guid: 15cf0aa122e12e546b014a3902218477, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2125164094}
     - targetCorrespondingSourceObject: {fileID: 3802501479016955796, guid: 15cf0aa122e12e546b014a3902218477, type: 3}
@@ -371,13 +368,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 7, z: 25}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
+  m_LocalPosition: {x: 0, y: 80, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: -180, z: 0}
 --- !u!45 &963194229
 Skybox:
   m_ObjectHideFlags: 0
@@ -405,14 +402,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: -13
-  _maxz: 28.2
+  _maxz: 28
   _maxx: 5
   _rotationSpeed: 11
   _highPosision: 16
   _minPosision: -1
   _leftPosision: -15
   _rightPosision: 15
-  _boostSpeed: 3.24
 --- !u!54 &2125164099
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -461,21 +457,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2125164104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125164093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62cc6bf6459c5794daf30f3c8e59f69f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 963194227}
-  _shootInterbal: 6.45
-  _zOffSet: 22.01
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
